@@ -40,21 +40,15 @@ function App() {
   return (
     <div className="App">
       <Title>Chuck Norris Joke Generator</Title>
-      <table>
-        <tr>
-          <td>
+ 
             <Button id='generate' callback={generateJoke}>Generate Joke</Button>
             <Dropdown id='dropdown' values={categories}></Dropdown>
-          </td>
-          <td>
+
             <JokeText id='JokeText'>{joke}</JokeText>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><Button id='clipboard' callback={copyJoke} variant={clicked === true ? undefined : "disabled"}>Copy to clipboard</Button></td>
-        </tr>
-      </table>
+         
+        
+          <Button id='clipboard' callback={copyJoke} variant={clicked === true ? undefined : "disabled"}>Copy to clipboard</Button>
+
     </div>
   )
 }
