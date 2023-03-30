@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './Styles/App.css'
-import Title from './components/Title.jsx'
-import Button from './components/Button.jsx'
-import Dropdown from './components/Dropdown.jsx'
-import JokeText from './components/JokeText.jsx'
+import Title from './Components/Title.jsx'
+import Button from './Components/Button.jsx'
+import Dropdown from './Components/Dropdown.jsx'
+import JokeText from './Components/JokeText.jsx'
 
 function App() {
   const [joke, setJoke] = useState("");
